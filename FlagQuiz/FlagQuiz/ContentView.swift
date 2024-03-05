@@ -7,6 +7,34 @@
 
 import SwiftUI
 
+struct Titles: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle.bold())
+            .foregroundColor(.blue)
+            .shadow(color: .accentColor, radius: 0.2)
+        
+    }
+}
+
+extension View {
+    func titleStyle() -> some View {
+        modifier(Titles())
+    }
+}
+
+
+struct FlagImage: View {
+    var imageName: String
+    
+    var body: some View {
+        Image(imageName)
+            .clipShape(Capsule())
+            .shadow(radius: 10)
+    }
+}
+
+
 
 struct ContentView: View {
     
@@ -16,9 +44,9 @@ struct ContentView: View {
     @State private var gameReset = false
     @State private var timesTapped = 0
     
+    
     @State var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Spain", "UK", "Ukraine", "US"].shuffled()
     @State var correctAnswer = Int.random(in: 0...2)
-    
     
     var body: some View {
         
@@ -29,8 +57,7 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 Text("Guess the Flag")
-                    .font(.largeTitle.bold())
-                    .foregroundStyle(.white)
+                    .titleStyle()
                 VStack(spacing: 30) {
                     VStack(spacing: 10) {
                         Text("Tap the flag of")
@@ -38,18 +65,14 @@ struct ContentView: View {
                             .font(.headline.weight(.heavy))
                         
                         Text(countries[correctAnswer])
-                            .foregroundStyle(.white)
-                            .font(.largeTitle.weight(.semibold))
+                            .titleStyle()
                     }
                     
                     ForEach(0..<3) { number in
                         Button {
                             flagTapped(number)
                         } label: {
-                            Image(countries[number])
-                                .clipShape(.capsule)
-                                .shadow(radius: 10)
-                            
+                            FlagImage(imageName: countries[number])
                         }
                     }
                 }
@@ -133,5 +156,4 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
 
