@@ -13,7 +13,6 @@ struct Titles: ViewModifier {
             .font(.largeTitle.bold())
             .foregroundColor(.blue)
             .shadow(color: .accentColor, radius: 0.2)
-        
     }
 }
 
@@ -23,7 +22,6 @@ extension View {
     }
 }
 
-
 struct FlagImage: View {
     var imageName: String
     
@@ -31,10 +29,9 @@ struct FlagImage: View {
         Image(imageName)
             .clipShape(Capsule())
             .shadow(radius: 10)
+        
     }
 }
-
-
 
 struct ContentView: View {
     
@@ -44,9 +41,16 @@ struct ContentView: View {
     @State private var gameReset = false
     @State private var timesTapped = 0
     
+    @State private var animationAmount = 0.0
+    @State private var changedOpacity = 1.0
+    @State private var changedScale = 1.0
+    
     
     @State var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Spain", "UK", "Ukraine", "US"].shuffled()
     @State var correctAnswer = Int.random(in: 0...2)
+    
+    
+    
     
     var body: some View {
         
@@ -56,30 +60,39 @@ struct ContentView: View {
             
             VStack {
                 Spacer()
-                Text("Guess the Flag")
+                Text("Guess The Flag")
                     .titleStyle()
+                
                 VStack(spacing: 30) {
                     VStack(spacing: 10) {
                         Text("Tap the flag of")
                             .foregroundStyle(.secondary)
                             .font(.headline.weight(.heavy))
-                        
                         Text(countries[correctAnswer])
                             .titleStyle()
+                            .animation(.easeInOut(duration: 0.6))
+                        
                     }
                     
                     ForEach(0..<3) { number in
                         Button {
+                            animationAmount += 360
                             flagTapped(number)
+                            
                         } label: {
                             FlagImage(imageName: countries[number])
                         }
+                        .rotation3DEffect(.degrees(number == correctAnswer ? animationAmount : 0), axis: (x: 0, y: 1, z: 0))
+                        .opacity(number != correctAnswer ? changedOpacity : 1.0)
+                        .scaleEffect(number != correctAnswer ? changedScale : 1.0)
                     }
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 20)
                 .background(.thinMaterial)
                 .clipShape(.rect(cornerRadius: 20))
+                .animation(.spring(duration: 1, bounce: 0.2))
+                
                 Spacer()
                 Spacer()
                 
@@ -92,9 +105,7 @@ struct ContentView: View {
                 .frame(width: 200, height: 100)
                 .background(.ultraThinMaterial)
                 .clipShape(.rect(cornerRadius: 20))
-                
-                
-                
+                .animation(.easeInOut(duration: 0.6))
                 
                 Spacer()
                 
@@ -104,7 +115,9 @@ struct ContentView: View {
         .alert(scoreTitle, isPresented: $showingScore) {
             if timesTapped < 8 {
                 Button("Continue", action: askQuestion)
-            } else {
+            }
+            
+            else {
                 Button("Restart", action: reset)
             }
         } message: {
@@ -120,6 +133,7 @@ struct ContentView: View {
         if number == correctAnswer {
             scoreTitle = "Correct Answer! "
             score += 1
+            
         }
         else {
             scoreTitle = """
@@ -128,21 +142,26 @@ struct ContentView: View {
             """
             score -= 1
         }
-        
         showingScore = true
+        changedOpacity = 0.25
+        changedScale = 0.70
+        
+        
     }
     
     func askQuestion() {
         if timesTapped < 8 {
             countries.shuffle()
             correctAnswer = Int.random(in: 0...2)
+            changedOpacity = 1
+            changedScale = 1
+            
+            
+            
         } else {
             scoreTitle = "Game Resets after 8 attempts"
             showingScore = true
-            
         }
-        
-        
     }
     
     func reset() {
