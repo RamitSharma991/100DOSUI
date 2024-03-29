@@ -35,15 +35,15 @@ struct ContentView: View {
                     isGridDisplayMode.toggle()
                 }) {
                     Image(systemName: isGridDisplayMode ? "square.grid.2x2" : "list.bullet")
-                        .tint(.gray)
+                        .tint(.white)
                 }
             }
-            .background(.darkBackground)
+            .background(.lightBackground)
             .preferredColorScheme(.dark)
         }
     }
+    
     var gridView: some View {
-        
         LazyVGrid(columns: columns) {
             ForEach(missions) { mission in
                 NavigationLink {
@@ -67,7 +67,6 @@ struct ContentView: View {
         }
     }
     
-    
     func gridDisplay(mission: Mission) -> some View {
         VStack {
             Image(mission.image)
@@ -86,14 +85,15 @@ struct ContentView: View {
             }
             .padding(.vertical)
             .frame(maxWidth: .infinity)
-            .background(.lightBackground)
+            .background(.darkBackground)
         }
         .clipShape(.rect(cornerRadius: 10))
         .overlay {
             RoundedRectangle(cornerRadius: 10)
-                .stroke(.lightBackground)
+                .stroke(.darkBackground)
         }
     }
+    
     func listDisplay(mission: Mission) -> some View {
         HStack {
             VStack(alignment: .leading) {
@@ -112,17 +112,11 @@ struct ContentView: View {
                     .font(.caption)
                     .foregroundStyle(.gray)
             }
-            
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            
-            
+            Spacer(minLength: 30)
         }
         .padding(.horizontal)
         .frame(maxWidth: .infinity)
-        .background(.lightBackground)
+        .background(.darkBackground.opacity(0.6))
         .clipShape(.rect(cornerRadius: 10))
         .overlay {
             RoundedRectangle(cornerRadius: 10)

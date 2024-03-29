@@ -16,6 +16,11 @@ struct AstronautView: View {
                 Image(astronaut.id)
                     .resizable()
                     .scaledToFit()
+                Rectangle()
+                    .frame(height: 2)
+                    .foregroundStyle(.lightBackground)
+                    .padding(.vertical)
+                    .padding(.horizontal)
                 
                 Text(astronaut.description)
                     .padding()

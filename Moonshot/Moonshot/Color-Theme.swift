@@ -12,7 +12,8 @@ extension ShapeStyle where Self == Color {
     static var darkBackground: Color {
         Color(red: 0.1, green: 0.1, blue: 0.2)
     }
-    static var lightBackground: Color {
-        Color(red: 0.2, green: 0.2, blue: 0.3)
+    static var lightBackground: LinearGradient {
+        LinearGradient(gradient: Gradient(colors: [Color.midPurple, Color.lightPurple, Color.darkPurple, Color.black]), startPoint: .topLeading, endPoint: .bottomTrailing)
     }
+
 }
