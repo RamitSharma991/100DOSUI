@@ -64,6 +64,9 @@ struct ContentView: View {
             }
             .sheet(isPresented: $showingAddExpense) {
                 AddView(expenses: expenses)
+                    .onDisappear {
+                        showingAddExpense = false
+                    }
             }
         }
     }
@@ -94,7 +97,6 @@ struct expenseSection: View {
     }
     
 }
-
 
 func colorCode(for amount: Double) -> Color {
     if amount < 10 {
