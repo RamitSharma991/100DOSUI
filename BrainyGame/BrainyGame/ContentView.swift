@@ -31,7 +31,7 @@ struct ContentView: View {
                 
                 VStack(spacing: 10) {
                     VStack {
-                        Text("Round \(rounds) / \(maxRounds)")
+                        Text("Round \(rounds) /\(maxRounds)")
                         
                         Text("Apps Move")
                             .font(.headline.bold())
