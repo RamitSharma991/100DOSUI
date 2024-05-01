@@ -40,7 +40,7 @@ struct RatingView: View {
             onImage
         }
     }
-
+    
 }
 
 #Preview {

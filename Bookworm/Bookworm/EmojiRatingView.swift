@@ -23,7 +23,7 @@ struct EmojiRatingView: View {
             Text("4⭐️")
         default:
             Text("5⭐️")
-
+            
         }
     }
 }

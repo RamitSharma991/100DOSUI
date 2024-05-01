@@ -10,18 +10,18 @@ import SwiftUI
 struct AddBookView: View {
     @Environment(\.modelContext) var modelContext
     @Environment(\.dismiss) var dismiss
-
+    
     
     @State private var title = ""
     @State private var author = ""
     @State private var rating = 3
     @State private var genre = "Kids"
     @State private var review = ""
-
+    
     let genres = ["Fantasy", "Mystery", "Poetry", "Kids", "Romance", "Horror", "Thriller"]
-
+    
     var body: some View {
-
+        
         NavigationStack {
             Form {
                 Section {

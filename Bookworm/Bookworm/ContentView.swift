@@ -10,7 +10,7 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) var modelContext
-    @Query var books: [Book]
+    @Query(sort: [SortDescriptor(\Book.title), SortDescriptor(\Book.author)]) var books: [Book]
     @State private var showingAddScreen = false
     
     var body: some View {
@@ -29,25 +29,35 @@ struct ContentView: View {
                             }
                         }
                     }
-                    
                 }
+                .onDelete(perform: deleteBooks)
             }
-                .navigationTitle("Bookworm")
-                .navigationDestination(for: Book.self){ book in
-                    DetailView(book: book)
+            .navigationTitle("Bookworm")
+            .navigationDestination(for: Book.self){ book in
+                DetailView(book: book)
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    EditButton()
                 }
-                .toolbar {
-                    ToolbarItem {
-                        Button("Add Book", systemImage: "plus") {
-                            showingAddScreen.toggle()
-                        }
+                ToolbarItem {
+                    Button("Add Book", systemImage: "plus") {
+                        showingAddScreen.toggle()
                     }
                 }
-                .sheet(isPresented: $showingAddScreen) {
-                    AddBookView()
-                }
+            }
+            .sheet(isPresented: $showingAddScreen) {
+                AddBookView()
+            }
         }
         .padding()
+    }
+    
+    func deleteBooks(at offsets: IndexSet) {
+        for offset in offsets {
+            let book = books[offset]
+            modelContext.delete(book)
+        }
     }
 }
 
