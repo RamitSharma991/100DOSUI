@@ -13,6 +13,7 @@ struct DetailView: View {
     @Environment(\.modelContext) var modelContext
     @Environment(\.dismiss) var dismiss
     @State private var showingDeleteAlert = false
+
     
     var body: some View {
         ScrollView {
@@ -38,6 +39,11 @@ struct DetailView: View {
             
             RatingView(rating: .constant(book.rating))
                 .font(.largeTitle)
+            
+            Text(showDate())
+                .font(.footnote)
+                .foregroundColor(.secondary)
+                .padding()
         }
         .navigationTitle(book.title)
         .navigationBarTitleDisplayMode(.inline)
@@ -61,6 +67,13 @@ struct DetailView: View {
         modelContext.delete(book)
         dismiss()
     }
+    
+    func showDate() -> String {
+        let dateFormatter = DateFormatter()
+           dateFormatter.dateStyle = .short
+           dateFormatter.timeStyle = .short
+           return dateFormatter.string(from: Date())
+    }
 }
 
 #Preview {
@@ -74,6 +87,5 @@ struct DetailView: View {
     }
     catch {
         return Text("Failed to create previews: \(error.localizedDescription)")
-        
     }
 }
