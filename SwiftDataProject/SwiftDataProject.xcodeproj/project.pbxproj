@@ -13,6 +13,7 @@
 		61E5EAF42BE91DEF00E648DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61E5EAF32BE91DEF00E648DA /* Preview Assets.xcassets */; };
 		61E5EAFB2BE91E0B00E648DA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E5EAFA2BE91E0B00E648DA /* User.swift */; };
 		61E5EAFD2BE91E5200E648DA /* EditUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E5EAFC2BE91E5200E648DA /* EditUserView.swift */; };
+		61E5EAFF2BE9238C00E648DA /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E5EAFE2BE9238C00E648DA /* UserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		61E5EAF32BE91DEF00E648DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		61E5EAFA2BE91E0B00E648DA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		61E5EAFC2BE91E5200E648DA /* EditUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserView.swift; sourceTree = "<group>"; };
+		61E5EAFE2BE9238C00E648DA /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				61E5EAEC2BE91DEC00E648DA /* SwiftDataProjectApp.swift */,
 				61E5EAFC2BE91E5200E648DA /* EditUserView.swift */,
 				61E5EAEE2BE91DEC00E648DA /* ContentView.swift */,
+				61E5EAFE2BE9238C00E648DA /* UserView.swift */,
 				61E5EAFA2BE91E0B00E648DA /* User.swift */,
 				61E5EAF02BE91DEF00E648DA /* Assets.xcassets */,
 				61E5EAF22BE91DEF00E648DA /* Preview Content */,
@@ -145,6 +148,7 @@
 			files = (
 				61E5EAEF2BE91DEC00E648DA /* ContentView.swift in Sources */,
 				61E5EAFD2BE91E5200E648DA /* EditUserView.swift in Sources */,
+				61E5EAFF2BE9238C00E648DA /* UserView.swift in Sources */,
 				61E5EAED2BE91DEC00E648DA /* SwiftDataProjectApp.swift in Sources */,
 				61E5EAFB2BE91E0B00E648DA /* User.swift in Sources */,
 			);
