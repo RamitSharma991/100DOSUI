@@ -14,6 +14,7 @@
 		61E5EAFB2BE91E0B00E648DA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E5EAFA2BE91E0B00E648DA /* User.swift */; };
 		61E5EAFD2BE91E5200E648DA /* EditUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E5EAFC2BE91E5200E648DA /* EditUserView.swift */; };
 		61E5EAFF2BE9238C00E648DA /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E5EAFE2BE9238C00E648DA /* UserView.swift */; };
+		61F9B4062BEA5921000ACCC6 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F9B4052BEA5921000ACCC6 /* Job.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		61E5EAFA2BE91E0B00E648DA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		61E5EAFC2BE91E5200E648DA /* EditUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserView.swift; sourceTree = "<group>"; };
 		61E5EAFE2BE9238C00E648DA /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		61F9B4052BEA5921000ACCC6 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		61F9B4072BEA5F63000ACCC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +60,12 @@
 		61E5EAEB2BE91DEC00E648DA /* SwiftDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				61F9B4072BEA5F63000ACCC6 /* Info.plist */,
 				61E5EAEC2BE91DEC00E648DA /* SwiftDataProjectApp.swift */,
 				61E5EAFC2BE91E5200E648DA /* EditUserView.swift */,
 				61E5EAEE2BE91DEC00E648DA /* ContentView.swift */,
 				61E5EAFE2BE9238C00E648DA /* UserView.swift */,
+				61F9B4052BEA5921000ACCC6 /* Job.swift */,
 				61E5EAFA2BE91E0B00E648DA /* User.swift */,
 				61E5EAF02BE91DEF00E648DA /* Assets.xcassets */,
 				61E5EAF22BE91DEF00E648DA /* Preview Content */,
@@ -147,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61E5EAEF2BE91DEC00E648DA /* ContentView.swift in Sources */,
+				61F9B4062BEA5921000ACCC6 /* Job.swift in Sources */,
 				61E5EAFD2BE91E5200E648DA /* EditUserView.swift in Sources */,
 				61E5EAFF2BE9238C00E648DA /* UserView.swift in Sources */,
 				61E5EAED2BE91DEC00E648DA /* SwiftDataProjectApp.swift in Sources */,
@@ -287,6 +293,7 @@
 				DEVELOPMENT_TEAM = L79F55H896;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftDataProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,6 +323,7 @@
 				DEVELOPMENT_TEAM = L79F55H896;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftDataProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
