@@ -15,6 +15,8 @@ struct ExpenseItem: Identifiable, Codable {
     let amount: Double
 }
 
+
+
 @Observable
 class Expenses {
     var items = [ExpenseItem]() {
