@@ -15,11 +15,13 @@ struct ContentView: View {
     
     @State private var processedImage: Image?
     @State private var filterIntensity = 0.5
+    @State private var filterRadius = 0.5
+    @State private var filter = 0.5
     @State private var selectedItem: PhotosPickerItem?
     @State private var currentFilter: CIFilter = CIFilter.sepiaTone()
     @State private var showingFilters = false
-    @AppStorage("filterCount") var filterCount = 0
-    @Environment(\.requestReview) var requestReview  
+    @AppStorage("filterCount") var filterCount = 3
+    @Environment(\.requestReview) var requestReview
     let context = CIContext()
 
     var body: some View {
@@ -61,7 +63,15 @@ struct ContentView: View {
                 .padding(.vertical)
                 
                 HStack {
+                    Text("Radie")
+                    Slider(value: $filterRadius)
+                        .onChange(of: filterRadius, applyProcessing)
+                }
+                .padding(.vertical)
+                
+                HStack {
                     Button("Change Filter", action: changeFilter)
+                        .disabled(selectedItem == nil)
                     Spacer()
                     
                     if let processedImage {
@@ -105,7 +115,7 @@ struct ContentView: View {
         if inputKeys.contains(kCIInputIntensityKey) {
             currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey)}
         if inputKeys.contains(kCIInputRadiusKey) {
-            currentFilter.setValue(filterIntensity * 200, forKey: kCIInputRadiusKey)}
+            currentFilter.setValue(filterRadius * 200, forKey: kCIInputRadiusKey)}
         if inputKeys.contains(kCIInputScaleKey) {
             currentFilter.setValue(filterIntensity * 10, forKey: kCIInputScaleKey)}
         
