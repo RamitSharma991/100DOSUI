@@ -23,7 +23,7 @@ struct ContentView: View {
     @AppStorage("filterCount") var filterCount = 3
     @Environment(\.requestReview) var requestReview
     let context = CIContext()
-
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -126,11 +126,7 @@ struct ContentView: View {
         processedImage = Image(uiImage: uiImage)
         
     }
-    
-    
 }
-
-
 
 #Preview {
     ContentView()
