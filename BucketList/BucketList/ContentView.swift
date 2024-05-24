@@ -11,6 +11,10 @@ import SwiftUI
 struct ContentView: View {
     @State private var viewModel = ViewModel()
     @State private var mapType: MKMapType = .standard
+    @State private var showingAuthenticationFailedAlert = false
+    @State private var authenticationErrorMessage = ""
+    
+    @Environment(\.dismiss) var dismiss
     
     
     let startPosition = MapCameraPosition.region(
@@ -21,7 +25,7 @@ struct ContentView: View {
     )
     
     var body: some View {
-        
+        VStack {
             if viewModel.isUnlocked {
                 VStack {
                     Picker("Map Type", selection: $mapType) {
@@ -44,10 +48,21 @@ struct ContentView: View {
                                     .clipShape(.circle)
                                     .onLongPressGesture {
                                         viewModel.selectedPlace = location
-                                }
+                                    }
+                                    .contextMenu {
+                                        Button("Add Place") {
+                                            viewModel.selectedPlace = location
+                                        }
+                                        Button("Remove Place") {
+                                            if let selectedLocation = viewModel.selectedPlace {
+                                                viewModel.removeLocation(at: selectedLocation.coordinate)
+                                            }
+                                        }
+                                    }
                             }
                         }
                     }
+                    .mapStyle(mapType == .standard ? .standard : .hybrid)
                     .onTapGesture { position in
                         if let coordinate = proxy.convert(position, from: .local) {
                             viewModel.addLocation(at: coordinate)
@@ -65,10 +80,18 @@ struct ContentView: View {
                     .background(.blue)
                     .foregroundStyle(.white)
                     .clipShape(.capsule)
+            }
+        }
+        .alert("Authentication Failed", isPresented: $showingAuthenticationFailedAlert) {
+            Button("Ok", role: .cancel) {}
+        } message: {
+            Text(authenticationErrorMessage)
         }
     }
+    
 }
 
 #Preview {
     ContentView()
 }
+
