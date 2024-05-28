@@ -26,16 +26,19 @@ struct MissionView: View {
                     .containerRelativeFrame(.horizontal) { width, axis in
                         width * 0.6
                     }
+                    .accessibilityHidden(true)
                 
                 Text("🚀 \(mission.formattedLaunchDate)")
                     .font(.title2)
                     .fontWeight(.thin)
+                    .accessibilityLabel("Launch Date: \(mission.formattedLaunchDate)")
                 
                 VStack(alignment: .leading) {
                     Rectangle()
                         .frame(height: 2)
                         .foregroundStyle(.lightBackground)
                         .padding(.vertical)
+                        .accessibilityHidden(true)
                     
                     Text("Mission Highlights")
                         .font(.title.bold())
@@ -47,6 +50,7 @@ struct MissionView: View {
                         .frame(height: 2)
                         .foregroundStyle(.lightBackground)
                         .padding(.vertical)
+                        .accessibilityHidden(true)
                     
                     Text("Crew")
                         .font(.title.bold())
@@ -77,6 +81,9 @@ struct MissionView: View {
                                     }
                                 }
                                 .padding(.horizontal)
+                                .accessibilityElement()
+                                .accessibilityLabel("\(crewMember.astronaut.name), \(crewMember.role)")
+                                .accessibilityHint("Tap to view information about: \(crewMember.astronaut.name)")
                             }
                         }
                     }

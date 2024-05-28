@@ -50,8 +50,10 @@ struct ContentView: View {
                     MissionView(mission: mission, astronauts: astronauts)
                 } label: {
                     gridDisplay(mission: mission)
-                    
                 }
+                .accessibilityElement()
+                .accessibilityLabel("\(mission.displayName), launched on \(mission.formattedLaunchDate)")
+                .accessibilityHint("Tap to view mission details")
             }
         }
     }
@@ -64,6 +66,10 @@ struct ContentView: View {
             } label: {
                 listDisplay(mission: mission)
             }
+            .accessibilityElement()
+            .accessibilityLabel("\(mission.displayName), launched on \(mission.formattedLaunchDate)")
+            .accessibilityHint("Tap to view mission details")
+            
         }
     }
     
@@ -74,6 +80,7 @@ struct ContentView: View {
                 .scaledToFit()
                 .frame(width: 100, height: 100)
                 .padding()
+                .accessibilityHidden(true)
             
             VStack {
                 Text(mission.displayName)
@@ -102,6 +109,7 @@ struct ContentView: View {
                     .scaledToFit()
                     .frame(width: 50, height: 50)
                     .padding()
+                    .accessibilityHidden(true)
             }
             
             VStack() {
