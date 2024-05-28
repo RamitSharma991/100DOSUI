@@ -95,6 +95,9 @@ struct expenseSection: View {
                 .foregroundColor(colorCode(for: item.amount))
                 .font(.title2)
         }
+        .accessibilityElement()
+        .accessibilityLabel("\(item.name), \(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))")
+        .accessibilityHint(item.type)
         
     }
     
