@@ -15,5 +15,3 @@
 ### Moonshot
 ### Word Scramble
 ### SwiftDataProject
-
-
