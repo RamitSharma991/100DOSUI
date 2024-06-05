@@ -37,10 +37,24 @@ struct ProspectsView: View {
         NavigationStack {
             List(prospects, selection: $selectedProspects) { prospect in
                 VStack(alignment: .leading) {
-                    Text(prospect.name)
-                        .font(.headline)
-                    Text(prospect.emailAddress)
-                        .foregroundStyle(.secondary)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(prospect.name)
+                                .font(.headline)
+                            Text(prospect.emailAddress)
+                                .foregroundStyle(.secondary)
+                        }
+                        Spacer()
+                        
+                        if prospect.isContacted {
+                            Image(systemName: "person.crop.circle.badge.checkmark")
+                                .foregroundColor(.green)
+                        } else {
+                            Image(systemName: "person.crop.circle.badge.xmark")
+                                .foregroundColor(.red)
+                        }
+                    }
+
                 }
                 .swipeActions {
                     Button("Delete", systemImage: "trash", role: .destructive) {
@@ -141,7 +155,6 @@ struct ProspectsView: View {
                     if success {
                         addRequest()
                     } else {
-                        print(error?.localizedDescription)
                     }
                 }
             }

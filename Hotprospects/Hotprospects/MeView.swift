@@ -34,12 +34,19 @@ struct MeView: View {
                     .scaledToFit()
                     .frame(width: 150, height: 150, alignment: .center)
                     .contextMenu {
-                        
                         ShareLink(item: Image(uiImage: qrCode), preview: SharePreview("My QR Code", image: Image(uiImage: qrCode)))
                     }
+                NavigationLink(destination: EditView(name: $name, emailAddress: $emailAddress)) {
+                    HStack {
+                        Image(systemName: "pencil")
+                        Text("Edit Info")
+                        Spacer()
+                    }
+                    .foregroundColor(.indigo)
+                }
                 
             }
-            .navigationTitle("Your code")
+            .navigationTitle("Your QR Code")
             .onAppear(perform: updateCode)
             .onChange(of: name, updateCode)
             .onChange(of: emailAddress, updateCode)
@@ -50,11 +57,18 @@ struct MeView: View {
         qrCode = genereateQRCode(from: "\(name)\n\(emailAddress)")
     }
     
+    func scaledQRCodeImage(_ image: CIImage, to size: CGSize) -> CIImage {
+        let scaleX = size.width / image.extent.size.width
+        let scaleY = size.height / image.extent.size.height
+        return image.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
+    }
+    
     func genereateQRCode(from string: String) -> UIImage {
         filter.message = Data(string.utf8)
         
         if let outputImage = filter.outputImage {
-            if let cgImage = context.createCGImage(outputImage, from: outputImage.extent) {
+            let scaledImage = scaledQRCodeImage(outputImage, to: CGSize(width: 32, height: 32))
+            if let cgImage = context.createCGImage(outputImage, from: scaledImage.extent) {
                 return UIImage(cgImage: cgImage)
             }
         }
