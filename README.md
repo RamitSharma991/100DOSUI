@@ -57,7 +57,7 @@ We welcome contributions! If you have a project or improvement you'd like to sha
 This project is licensed under the MIT License. See the LICENSE file for more information.
 
 #### Contributors
-[RamitSharma991]([RamitSharma991](https://github.com/RamitSharma991))
+[RamitSharma991](https://github.com/RamitSharma991)
 
 #### Additional Resources
 For more information and resources on SwiftUI, visit the official SwiftUI documentation.
