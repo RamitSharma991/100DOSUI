@@ -45,6 +45,9 @@ A word game that challenges you to create as many words as possible from a given
 #### SwiftDataProject
 A project demonstrating advanced data handling and persistence techniques in SwiftUI.
 
+#### Flashzilla 
+Timer,  timer coalescing
+
 #### Getting Started
 - Clone this repository.
 - Open the desired project folder in Xcode.
