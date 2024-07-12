@@ -46,7 +46,7 @@ A word game that challenges you to create as many words as possible from a given
 A project demonstrating advanced data handling and persistence techniques in SwiftUI.
 
 #### Flashzilla 
-Timer,  timer coalescing, Accessiblity under environment overrides
+Timer,  timer coalescing, Accessiblity under environment overrides, Gestures, Stacks
 
 #### Getting Started
 - Clone this repository.
