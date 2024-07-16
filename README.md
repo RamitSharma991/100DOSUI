@@ -48,6 +48,9 @@ A project demonstrating advanced data handling and persistence techniques in Swi
 #### Flashzilla 
 Timer,  timer coalescing, Accessiblity under environment overrides, Gestures, Stacks, UserDefaults, abs, HitTesting
 
+#### Layout and geometry
+Alignment guides, Absolute positioning, Resizing using GeometryReader, frames and coordinates, ScrollView effects inside GeometryReader, visualEffect and scrollTargetBehavior
+
 #### Getting Started
 - Clone this repository.
 - Open the desired project folder in Xcode.
