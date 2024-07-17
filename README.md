@@ -51,6 +51,9 @@ Timer,  timer coalescing, Accessiblity under environment overrides, Gestures, St
 #### Layout and geometry
 Alignment guides, Absolute positioning, Resizing using GeometryReader, frames and coordinates, ScrollView effects inside GeometryReader, visualEffect and scrollTargetBehavior
 
+
+#### Sharing @ObservableObject 
+
 #### Getting Started
 - Clone this repository.
 - Open the desired project folder in Xcode.
