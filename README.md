@@ -52,7 +52,8 @@ Timer,  timer coalescing, Accessiblity under environment overrides, Gestures, St
 Alignment guides, Absolute positioning, Resizing using GeometryReader, frames and coordinates, ScrollView effects inside GeometryReader, visualEffect and scrollTargetBehavior
 
 
-#### Sharing @ObservableObject    
+#### Sharing @ObservableObject   
+presenting lists, details, view layouts with classes
 
 #### Getting Started
 - Clone this repository.
