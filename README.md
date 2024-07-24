@@ -53,7 +53,7 @@ Alignment guides, Absolute positioning, Resizing using GeometryReader, frames an
 
 
 #### Sharing @ObservableObject   
-presenting lists, details, view layouts with classes
+presenting lists, details, view layouts with classes, searchable
 
 #### Getting Started
 - Clone this repository.
