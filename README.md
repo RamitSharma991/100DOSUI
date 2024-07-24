@@ -53,7 +53,7 @@ Alignment guides, Absolute positioning, Resizing using GeometryReader, frames an
 
 
 #### Sharing @ObservableObject   
-presenting lists, details, view layouts with classes, searchable
+presenting lists, details, view layouts with classes, searchable, Detailview on iPAD-OS 
 
 #### Getting Started
 - Clone this repository.
