@@ -51,6 +51,8 @@ Timer,  timer coalescing, Accessiblity under environment overrides, Gestures, St
 #### Layout and geometry
 Alignment guides, Absolute positioning, Resizing using GeometryReader, frames and coordinates, ScrollView effects inside GeometryReader, visualEffect and scrollTargetBehavior
 
+#### SnowSeeker
+
 
 #### Sharing @ObservableObject   
 presenting lists, details, view layouts with classes, searchable, Detailview on iPAD-OS, size classes 
