@@ -16,13 +16,27 @@ struct ResortView: View {
     
     @Environment(Favorites.self) var favorites
     
+    let backgroundGradient = LinearGradient(gradient: Gradient(colors: [.purple, .blue, .pink, .indigo]), startPoint: .topLeading, endPoint: .bottomTrailing)
+    
     let resort: Resort
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
-                Image(decorative: resort.id)
-                    .resizable()
-                    .scaledToFit()
+                ZStack {
+                    Image(decorative: resort.id)
+                        .resizable()
+                        .scaledToFit()
+                    
+                    Text("© \(resort.imageCredit)")
+                        .font(.caption2.bold())
+                        .foregroundColor(.white)
+                        .padding(5)
+                        .background(backgroundGradient.opacity(0.2))
+                        .clipShape(Capsule())
+                        .shadow(radius: 0.2)
+                        .padding([.top, .leading], 5)
+                    
+                }
                 
                 HStack {
                     if horizontalSizeClass == .compact && dynamicTypeSize > .large {
@@ -44,7 +58,7 @@ struct ResortView: View {
                     Text("Facilities")
                         .font(.headline)
                     
-                    //                    Text(resort.facilities.joined(separator: ", "))
+                    //  Text(resort.facilities.joined(separator: ", "))
                     HStack {
                         ForEach(resort.FacilityTypes) { facility in
                             Button {
