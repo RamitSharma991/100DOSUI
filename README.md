@@ -54,6 +54,9 @@ Alignment guides, Absolute positioning, Resizing using GeometryReader, frames an
 #### SnowSeeker 
 A really good template and fumdamental app built by using skills such as split view layouts, optional alerts, layout with transparent groups, custom environment classes, and even an improved way of formatting lists in text, handling Codable, creating scrolling lists, @ObservableObject presenting lists, details, view layouts with classes, searchable, Detailview on iPAD-OS, size classes. 
 
+#### Drawing SwiftUI
+Custom paths, shapes, insettable shape
+
 
 #### Getting Started
 - Clone this repository.
