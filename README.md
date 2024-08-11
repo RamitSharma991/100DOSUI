@@ -43,7 +43,7 @@ An educational app about the Apollo moon missions, featuring detailed informatio
 A word game that challenges you to create as many words as possible from a given set of letters.
 
 #### SwiftDataProject
-A project demonstrating advanced data handling and persistence techniques in SwiftUI.
+A project demonstrating advanced data handling and persistence techniques in SwiftUI. 
 
 #### Flashzilla 
 Timer,  timer coalescing, Accessiblity under environment overrides, Gestures, Stacks, UserDefaults, abs, HitTesting.
