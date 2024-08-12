@@ -43,17 +43,19 @@ An educational app about the Apollo moon missions, featuring detailed informatio
 A word game that challenges you to create as many words as possible from a given set of letters.
 
 #### SwiftDataProject
-A project demonstrating advanced data handling and persistence techniques in SwiftUI.
+A project demonstrating advanced data handling and persistence techniques in SwiftUI. 
 
 #### Flashzilla 
-Timer,  timer coalescing, Accessiblity under environment overrides, Gestures, Stacks, UserDefaults, abs, HitTesting
+Timer,  timer coalescing, Accessiblity under environment overrides, Gestures, Stacks, UserDefaults, abs, HitTesting.
 
 #### Layout and geometry
-Alignment guides, Absolute positioning, Resizing using GeometryReader, frames and coordinates, ScrollView effects inside GeometryReader, visualEffect and scrollTargetBehavior 
+Alignment guides, Absolute positioning, Resizing using GeometryReader, frames and coordinates, ScrollView effects inside GeometryReader, visualEffect and scrollTargetBehavior.
 
 #### SnowSeeker 
 A really good template and fumdamental app built by using skills such as split view layouts, optional alerts, layout with transparent groups, custom environment classes, and even an improved way of formatting lists in text, handling Codable, creating scrolling lists, @ObservableObject presenting lists, details, view layouts with classes, searchable, Detailview on iPAD-OS, size classes. 
 
+#### Drawing SwiftUI
+Custom paths, shapes, insettable shape, CGAffineTransform, Creative borders and fills using ImagePaint, Metal rendering, drawingGroup, blurs, blending, animatableData, Spirographs, Arrows 
 
 #### Getting Started
 - Clone this repository.
