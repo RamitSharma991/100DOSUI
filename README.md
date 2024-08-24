@@ -40,7 +40,7 @@ A quiz game that tests your knowledge of world flags. It’s a fun way to learn 
 An educational app about the Apollo moon missions, featuring detailed information and beautiful images.
 
 #### Word Scramble
-A word game that challenges you to create as many words as possible from a given set of letters.
+A word game that challenges you to create as many words as possible from a given set of letters. 
 
 #### SwiftDataProject
 A project demonstrating advanced data handling and persistence techniques in SwiftUI. 
