@@ -60,7 +60,7 @@ Custom paths, shapes, insettable shape, CGAffineTransform, Creative borders and 
 #### Core Data
 NSManagedObject subclasses, Dynamic filtering @FetchRequest, one to many relationsips 
 
-#### Getting Started
+#### Getting Started 
 - Clone this repository.
 - Open the desired project folder in Xcode.
 - Build and run the project on your simulator or device.
