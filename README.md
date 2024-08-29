@@ -3,17 +3,17 @@ Welcome to the 100 Days of SwiftUI project repository. This project contains var
 
 ### Projects
 #### Better Rest
-A SwiftUI app that helps you calculate the best time to go to bed, based on the time you need to wake up and your desired amount of sleep.
+A SwiftUI app that helps you calculate the best time to go to bed, based on the time you need to wake up and your desired amount of sleep. 
 
 #### Bill Splitter
 An app to split the bill among friends or family members. It calculates the amount each person needs to pay, including the tip.
 
 
 #### Bookworm
-A simple app for keeping track of books you’ve read, using Core Data to persist the information.
+A simple app for keeping track of books you’ve read, using Core Data to persist the information. 
 
 #### Bucket List
-An app to keep track of things you want to do or places you want to visit, utilizing SwiftUI and MapKit.
+An app to keep track of things you want to do or places you want to visit, utilizing SwiftUI and MapKit. 
 
 #### Brainy Game
 A game that challenges your memory and cognitive skills with various puzzles and brain teasers.
@@ -40,7 +40,7 @@ A quiz game that tests your knowledge of world flags. It’s a fun way to learn 
 An educational app about the Apollo moon missions, featuring detailed information and beautiful images.
 
 #### Word Scramble
-A word game that challenges you to create as many words as possible from a given set of letters.
+A word game that challenges you to create as many words as possible from a given set of letters. 
 
 #### SwiftDataProject
 A project demonstrating advanced data handling and persistence techniques in SwiftUI. 
@@ -57,7 +57,10 @@ A really good template and fumdamental app built by using skills such as split v
 #### Drawing SwiftUI
 Custom paths, shapes, insettable shape, CGAffineTransform, Creative borders and fills using ImagePaint, Metal rendering, drawingGroup, blurs, blending, animatableData, Spirographs, Arrows, Color Cycling circle
 
-#### Getting Started
+#### Core Data
+NSManagedObject subclasses, Dynamic filtering @FetchRequest, one to many relationsips 
+
+#### Getting Started 
 - Clone this repository.
 - Open the desired project folder in Xcode.
 - Build and run the project on your simulator or device.
@@ -66,7 +69,7 @@ Custom paths, shapes, insettable shape, CGAffineTransform, Creative borders and 
 We welcome contributions! If you have a project or improvement you'd like to share, please submit a pull request.
 
 #### License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+This project is licensed under the MIT License. See the LICENSE file for more information. 
 
 #### Contributors
 [RamitSharma991](https://github.com/RamitSharma991)
