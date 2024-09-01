@@ -58,7 +58,7 @@ A really good template and fumdamental app built by using skills such as split v
 Custom paths, shapes, insettable shape, CGAffineTransform, Creative borders and fills using ImagePaint, Metal rendering, drawingGroup, blurs, blending, animatableData, Spirographs, Arrows, Color Cycling circle
 
 #### Core Data
-NSManagedObject subclasses, Dynamic filtering @FetchRequest, one to many relationsips, NSPredicate
+NSManagedObject subclasses, Dynamic filtering @FetchRequest, one to many relationsips, NSPredicate, @Published
 
 #### Getting Started 
 - Clone this repository.
