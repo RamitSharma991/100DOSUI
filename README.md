@@ -59,7 +59,7 @@ Custom paths, shapes, insettable shape, CGAffineTransform, Creative borders and 
 
 #### Core Data
 NSManagedObject subclasses, Dynamic filtering @FetchRequest, one to many relationsips, NSPredicate, @Published, Codable conformance, Encoding an ObservableObject, combine Core Data and SwiftUI
-
+ 
 #### Getting Started 
 - Clone this repository. 
 - Open the desired project folder in Xcode.
