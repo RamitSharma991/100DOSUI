@@ -12,7 +12,7 @@ An app to split the bill among friends or family members. It calculates the amou
 A simple app for keeping track of books you’ve read, using Core Data to persist the information. 
 
 #### Bucket List
-An app to keep track of things you want to do or places you want to visit, utilizing SwiftUI and MapKit.  
+An app to keep track of things you want to do or places you want to visit, utilizing SwiftUI and MapKit.   
 
 #### Brainy Game
 A game that challenges your memory and cognitive skills with various puzzles and brain teasers.   
