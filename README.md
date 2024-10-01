@@ -2,7 +2,7 @@
 Welcome to the 100 Days of SwiftUI project repository. This project contains various SwiftUI applications and games that you can build and learn from as part of the 100 Days of SwiftUI challenge. Each project focuses on different aspects of SwiftUI and provides a hands-on approach to learning this powerful framework.
  
 ### Projects   
-#### Better Rest
+#### Better Rest 
 A SwiftUI app that helps you calculate the best time to go to bed, based on the time you need to wake up and your desired amount of sleep. 
 
 #### Bill Splitter
