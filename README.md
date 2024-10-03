@@ -15,7 +15,7 @@ A simple app for keeping track of books you’ve read, using Core Data to persis
 An app to keep track of things you want to do or places you want to visit, utilizing SwiftUI and MapKit.   
 
 #### Brainy Game
-A game that challenges your memory and cognitive skills with various puzzles and brain teasers.    
+A game that challenges your memory and cognitive skills with various puzzles and brain teasers.   
 
 #### Converter App
 A handy utility app to convert between different units of measurement, such as temperature, length, and weight.
