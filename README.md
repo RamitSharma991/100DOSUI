@@ -1,8 +1,8 @@
 ## 100DOSUI
-Welcome to the 100 Days of SwiftUI project repository. This project contains various SwiftUI applications and games that you can build and learn from as part of the 100 Days of SwiftUI challenge. Each project focuses on different aspects of SwiftUI and provides a hands-on approach to learning this powerful framework.  
+Welcome to the 100 Days of SwiftUI project repository. This project contains various SwiftUI applications and games that you can build and learn from as part of the 100 Days of SwiftUI challenge. Each project focuses on different aspects of SwiftUI and provides a hands-on approach to learning this powerful framework.
  
-### Projects  
-#### Better Rest
+### Projects   
+#### Better Rest 
 A SwiftUI app that helps you calculate the best time to go to bed, based on the time you need to wake up and your desired amount of sleep. 
 
 #### Bill Splitter
@@ -15,7 +15,7 @@ A simple app for keeping track of books you’ve read, using Core Data to persis
 An app to keep track of things you want to do or places you want to visit, utilizing SwiftUI and MapKit.   
 
 #### Brainy Game
-A game that challenges your memory and cognitive skills with various puzzles and brain teasers.    
+A game that challenges your memory and cognitive skills with various puzzles and brain teasers.   
 
 #### Converter App
 A handy utility app to convert between different units of measurement, such as temperature, length, and weight.
@@ -56,7 +56,7 @@ A really good template and fumdamental app built by using skills such as split v
 #### Drawing SwiftUI
 Custom paths, shapes, insettable shape, CGAffineTransform, Creative borders and fills using ImagePaint, Metal rendering, drawingGroup, blurs, blending, animatableData, Spirographs, Arrows, Color Cycling circle, SwiftUI coordinators 
  
-#### Core Data
+#### Core Data 
 NSManagedObject subclasses, Dynamic filtering @FetchRequest, one to many relationsips, NSPredicate, @Published, Codable conformance, Encoding an ObservableObject, combine Core Data and SwiftUI
  
 #### Getting Started 
