@@ -13,6 +13,7 @@
 		6142743A2C98708C00E71633 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614274392C98708C00E71633 /* Preview Assets.xcassets */; };
 		614274412C9870DD00E71633 /* ShufflerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614274402C9870DD00E71633 /* ShufflerModel.swift */; };
 		614274432C9870F600E71633 /* ShufflerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614274422C9870F600E71633 /* ShufflerViewModel.swift */; };
+		61CDDE0B2CADBA0A00650FD1 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CDDE0A2CADBA0A00650FD1 /* AspectVGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		614274392C98708C00E71633 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		614274402C9870DD00E71633 /* ShufflerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShufflerModel.swift; sourceTree = "<group>"; };
 		614274422C9870F600E71633 /* ShufflerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShufflerViewModel.swift; sourceTree = "<group>"; };
+		61CDDE0A2CADBA0A00650FD1 /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				614274402C9870DD00E71633 /* ShufflerModel.swift */,
+				61CDDE0A2CADBA0A00650FD1 /* AspectVGrid.swift */,
 				614274422C9870F600E71633 /* ShufflerViewModel.swift */,
 				614274342C98708800E71633 /* ShufflerGameView.swift */,
 				614274322C98708800E71633 /* ShufflerGameApp.swift */,
@@ -146,6 +149,7 @@
 				614274352C98708800E71633 /* ShufflerGameView.swift in Sources */,
 				614274332C98708800E71633 /* ShufflerGameApp.swift in Sources */,
 				614274432C9870F600E71633 /* ShufflerViewModel.swift in Sources */,
+				61CDDE0B2CADBA0A00650FD1 /* AspectVGrid.swift in Sources */,
 				614274412C9870DD00E71633 /* ShufflerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

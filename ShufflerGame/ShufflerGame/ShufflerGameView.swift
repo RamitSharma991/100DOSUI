@@ -10,6 +10,7 @@ import SwiftUI
 struct ShufflerGameView: View {
     
     @ObservedObject var viewModel: ShufflerViewModel
+    private let aspectRatio: CGFloat = 2/3
     @State private var isStarted = false
     
     var body: some View {
@@ -47,16 +48,13 @@ struct ShufflerGameView: View {
         }
     }
     
-    var cards: some View {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 85), spacing: 0)], spacing: 0) {
-            ForEach(viewModel.cards) { card in
-                CardView(card)
-                    .aspectRatio(2/3, contentMode: .fit)
-                    .padding(4)
-                    .onTapGesture {
-                        viewModel.choose(card)
-                    }
-            }
+    private var cards: some View {
+        AspectVGrid(viewModel.cards, aspectRatio: aspectRatio) { card in
+            CardView(card)
+                .padding(4)
+                .onTapGesture {
+                    viewModel.choose(card)
+                }
         }
         .foregroundColor(viewModel.themeColor.opacity(0.3))
     }
@@ -94,7 +92,7 @@ struct ShufflerGameView: View {
                 }
                 .font(.subheadline.monospaced().bold())
             }
-            .frame(height: 20)
+            .frame(height: 40)
             .padding()
         }
     }
