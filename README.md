@@ -18,7 +18,7 @@ An app to keep track of things you want to do or places you want to visit, utili
 A game that challenges your memory and cognitive skills with various puzzles and brain teasers.   
 
 #### Converter App
-A handy utility app to convert between different units of measurement, such as temperature, length, and weight.
+A handy utility app to convert between different units of measurement, such as temperature, length, and weight. 
 
 #### Cupcake Corner
 An e-commerce app for ordering cupcakes. It demonstrates how to use forms and handle network requests in SwiftUI.
