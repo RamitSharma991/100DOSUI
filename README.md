@@ -60,7 +60,7 @@ Set (stylized as SET or SET!) is a real-time card game designed by Marsha Falco 
 #### Drawing SwiftUI
 Custom paths, shapes, insettable shape, CGAffineTransform, Creative borders and fills using ImagePaint, Metal rendering, drawingGroup, blurs, blending, animatableData, Spirographs, Arrows, Color Cycling circle, SwiftUI coordinators 
  
-#### Core Data 
+#### Core Data  
 NSManagedObject subclasses, Dynamic filtering @FetchRequest, one to many relationsips, NSPredicate, @Published, Codable conformance, Encoding an ObservableObject, combine Core Data and SwiftUI
  
 #### Getting Started 
