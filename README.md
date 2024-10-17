@@ -69,7 +69,7 @@ NSManagedObject subclasses, Dynamic filtering @FetchRequest, one to many relatio
 - Build and run the project on your simulator or device.
 
 #### Contributing
-We welcome contributions! If you have a project or improvement you'd like to share, please submit a pull request.
+We welcome contributions! If you have a project or improvement you'd like to share, please submit a pull request. 
 
 #### License
 This project is licensed under the MIT License. See the LICENSE file for more information. 
