@@ -9,7 +9,7 @@ A SwiftUI app that helps you calculate the best time to go to bed, based on the 
 An app to split the bill among friends or family members. It calculates the amount each person needs to pay, including the tip.
 
 #### Bookworm
-A simple app for keeping track of books you’ve read, using Core Data to persist the information. 
+A simple app for keeping track of books you’ve read, using Core Data to persist the information.
 
 #### Bucket List
 An app to keep track of things you want to do or places you want to visit, utilizing SwiftUI and MapKit.   
