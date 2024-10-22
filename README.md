@@ -21,7 +21,7 @@ A game that challenges your memory and cognitive skills with various puzzles and
 A handy utility app to convert between different units of measurement, such as temperature, length, and weight. 
 
 #### Cupcake Corner
-An e-commerce app for ordering cupcakes. It demonstrates how to use forms and handle network requests in SwiftUI.
+An e-commerce app for ordering cupcakes. It demonstrates how to use forms and handle network requests in SwiftUI. 
 
 #### Hot Prospects
 An app to manage your contacts and scan business cards. It uses QR codes and integrates with your device’s camera.
