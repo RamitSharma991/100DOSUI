@@ -11,7 +11,7 @@ An app to split the bill among friends or family members. It calculates the amou
 #### Bookworm 
 A simple app for keeping track of books you’ve read, using Core Data to persist the information.
 
-#### Bucket List
+#### Bucket List 
 An app to keep track of things you want to do or places you want to visit, utilizing SwiftUI and MapKit.   
 
 #### Brainy Game
