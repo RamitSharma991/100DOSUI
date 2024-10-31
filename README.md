@@ -35,7 +35,7 @@ An app that lets you apply various filters to your photos. It demonstrates the u
 #### Flag Quiz
 A quiz game that tests your knowledge of world flags. It’s a fun way to learn more about different countries.
 
-#### Moonshot
+#### Moonshot 
 An educational app about the Apollo moon missions, featuring detailed information and beautiful images.
 
 #### Word Scramble
