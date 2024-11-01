@@ -6,7 +6,7 @@ Welcome to the 100 Days of SwiftUI project repository. This project contains var
 A SwiftUI app that helps you calculate the best time to go to bed, based on the time you need to wake up and your desired amount of sleep. 
 
 #### Bill Splitter 
-An app to split the bill among friends or family members. It calculates the amount each person needs to pay, including the tip.
+An app to split the bill among friends or family members. It calculates the amount each person needs to pay, including the tip. 
 
 #### Bookworm 
 A simple app for keeping track of books you’ve read, using Core Data to persist the information.
