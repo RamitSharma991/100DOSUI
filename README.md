@@ -27,7 +27,7 @@ An e-commerce app for ordering cupcakes. It demonstrates how to use forms and ha
 An app to manage your contacts and scan business cards. It uses QR codes and integrates with your device’s camera.
 
 #### iExpense
-A personal expense tracker that helps you keep track of your spending. It uses Core Data for data persistence.
+A personal expense tracker that helps you keep track of your spending. It uses Core Data for data persistence. 
 
 #### Instafilter
 An app that lets you apply various filters to your photos. It demonstrates the use of Core Image and integrating with SwiftUI.
