@@ -1,5 +1,5 @@
 ## 100DOSUI
-Welcome to the 100 Days of SwiftUI project repository. This project contains various SwiftUI applications and games that you can build and learn from as part of the 100 Days of SwiftUI challenge. Each project focuses on different aspects of SwiftUI and provides a hands-on approach to learning this powerful framework.
+Welcome to the 100 Days of SwiftUI project repository. This project contains various SwiftUI applications and games that you can build and learn from as part of the 100 Days of SwiftUI challenge. Each project focuses on different aspects of SwiftUI and provides a hands-on approach to learning this powerful framework. 
   
 ### Projects
 #### Better Rest 
