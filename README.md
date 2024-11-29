@@ -26,7 +26,7 @@ An e-commerce app for ordering cupcakes. It demonstrates how to use forms and ha
 #### Hot Prospects
 An app to manage your contacts and scan business cards. It uses QR codes and integrates with your device’s camera.
 
-#### iExpense
+#### iExpense 
 A personal expense tracker that helps you keep track of your spending. It uses Core Data for data persistence. 
 
 #### Instafilter
